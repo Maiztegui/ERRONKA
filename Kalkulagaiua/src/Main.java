@@ -21,6 +21,8 @@ public class Main {
 
         emaitza=zenbakia1+zenbakia2;
         System.out.println("Sartutako zenbakien batuketa "+emaitza+" da!");
+        System.out.println("===================================");
+
     }
 
 }
