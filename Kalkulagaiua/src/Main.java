@@ -40,7 +40,7 @@ public class Main {
         zenbakia2=num.nextDouble();
 
         emaitza=zenbakia1*zenbakia2;
-        System.out.println("Sartutako zenbakien batuketa "+emaitza+" da!");
+        System.out.println("Sartutako zenbakien biderketa "+emaitza+" da!");
         System.out.println("===================================");
     }
 
@@ -58,7 +58,7 @@ public class Main {
         zenbakia2=num.nextDouble();
 
         emaitza=Math.pow(zenbakia1, (double) 1 / zenbakia2);;
-        System.out.println("Sartutako zenbakien batuketa "+emaitza+" da!");
+        System.out.println("Sartutako zenbakien erroketa "+emaitza+" da!");
         System.out.println("===================================");
     }
     public static void kenketa() {
