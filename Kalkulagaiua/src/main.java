@@ -20,6 +20,7 @@ public class main {
         System.out.println("==========                      · 7 BUKATU PROGRAMA                      ==========");
         System.out.println("===================================================================================");
     }
+
         WHILE(eragiketazenbakia!=7){
         System.out.println("Sartu egin nahi duzun eragiketaren zenbakia");
         eragiketamota=num.nextInt();
