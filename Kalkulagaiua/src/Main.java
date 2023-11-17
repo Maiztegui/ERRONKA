@@ -46,7 +46,7 @@ public class Main {
         System.out.println("== 4. ZATIKETA                                                                   ==");
         System.out.println("== 5. BERREKETA                                                                  ==");
         System.out.println("== 6. ERROKETA                                                                   ==");
-        System.out.println("== 7. BUKATU PROGRAMA                                                            ==");
+        System.out.println("== 7. BUKATU PROGRAMA                                                         ==");
         System.out.println("===================================================================================");
     }
 
