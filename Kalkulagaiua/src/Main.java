@@ -1,82 +1,79 @@
 import java.util.Scanner;
+
 public class Main {
-
-    public static void main(String[] args){
-        batuketa();
-        biderketa();
-        erroketa();
-        kenketa();
+    public static void main(String[] args) {
+        int zenbakia;
+        menua();
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Aukeratu eragiketa bat; idatzi dagokion zenbakia");
+        zenbakia = sc.nextInt();
+        while (zenbakia!=7){
+            switch (zenbakia){
+                case 1:
+                    batuketa();
+                    break;
+                case 2:
+                    kenketa();
+                    break;
+                case 3:
+                    biderketa();
+                    break;
+                case 4:
+                    zatiketa();
+                    break;
+                case 5:
+                    berreketa();
+                    break;
+                case 6:
+                    erroketa();
+                    break;
+                default:
+                    System.out.println("Sartutako zenbakia ez dago aukeren artean");
+            }
+            menua();
+            zenbakia = sc.nextInt();
+        }
     }
+
+    private static void menua() {
+        System.out.println("===================================================================================");
+        System.out.println("==================             MALTUNA KALKULAGAILUA              =================");
+        System.out.println("===================================================================================");
+        System.out.println("===== Ondorengo eragiketak egin ditzaket, sakatu zenbakia eta lagunduko dizut! ====");
+        System.out.println("== 1. BATUKETA                                                                   ==");
+        System.out.println("== 2. KENKETA                                                                    ==");
+        System.out.println("== 3. BIDERKETA                                                                  ==");
+        System.out.println("== 4. ZATIKETA                                                                   ==");
+        System.out.println("== 5. BERREKETA                                                                  ==");
+        System.out.println("== 6. ERROKETA                                                                   ==");
+        System.out.println("== 7. BUKATU PROGRAMA                                                         ==");
+        System.out.println("===================================================================================");
+    }
+
+
+
     public static void batuketa() {
-        Scanner num=new Scanner(System.in);
 
-        Double zenbakia1, zenbakia2,emaitza;
-
-        System.out.println("===================================");
-        System.out.println("====         BATUKETA           ====");
-        System.out.println("===================================");
-        System.out.println("Sartu lehenengo zenbakia");
-        zenbakia1=num.nextDouble();
-        System.out.println("Sartu bigarren zenbakia");
-        zenbakia2=num.nextDouble();
-
-        emaitza=zenbakia1+zenbakia2;
-        System.out.println("Sartutako zenbakien batuketa "+emaitza+" da!");
-        System.out.println("===================================");
 
     }
 
     public static void biderketa() {
-        Scanner num=new Scanner(System.in);
 
-        Double zenbakia1, zenbakia2,emaitza;
-
-        System.out.println("===================================");
-        System.out.println("====         BIDERKETA           ====");
-        System.out.println("===================================");
-        System.out.println("Sartu lehenengo zenbakia");
-        zenbakia1=num.nextDouble();
-        System.out.println("Sartu bigarren zenbakia");
-        zenbakia2=num.nextDouble();
-
-        emaitza=zenbakia1*zenbakia2;
-        System.out.println("Sartutako zenbakien biderketa "+emaitza+" da!");
-        System.out.println("===================================");
     }
 
     public static void erroketa() {
-        Scanner num=new Scanner(System.in);
 
-        Double zenbakia1, zenbakia2,emaitza;
-
-        System.out.println("===================================");
-        System.out.println("====         ERROKETA          ====");
-        System.out.println("===================================");
-        System.out.println("Sartu lehenengo zenbakia");
-        zenbakia1=num.nextDouble();
-        System.out.println("Sartu bigarren zenbakia");
-        zenbakia2=num.nextDouble();
-
-        emaitza=Math.pow(zenbakia1, (double) 1 / zenbakia2);;
-        System.out.println("Sartutako zenbakien erroketa "+emaitza+" da!");
-        System.out.println("===================================");
     }
     public static void kenketa() {
-        Scanner num=new Scanner(System.in);
 
-        Double zenbakia1, zenbakia2,emaitza;
+    }
 
-        System.out.println("===================================");
-        System.out.println("====         KENKETA           ====");
-        System.out.println("===================================");
-        System.out.println("Sartu lehenengo zenbakia");
-        zenbakia1=num.nextDouble();
-        System.out.println("Sartu bigarren zenbakia");
-        zenbakia2=num.nextDouble();
+    public static void berreketa() {
 
-        emaitza=zenbakia1-zenbakia2;
-        System.out.println("Sartutako zenbakien kenketa "+emaitza+" da!");
-        System.out.println("===================================");
+    }
+    public static void zatiketa() {
+
     }
 
 }
+
